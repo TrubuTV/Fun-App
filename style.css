@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&display=swap');
+
+body{
+    /* font-family: Arial, sans-serif; */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+header h1{
+    font-family: 'Lobster' cursive;
+    font-size: 2.5em;
+    margin:0;
+    padding: 0.5em 0;
+    background: linear-gradient(90deg, #ff6b6b, #ffcc5c,#88d8b0,#6b6bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 5s infinite;
+    
+}
+
+@keyframes gradientShift{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+nav ul{
+ list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 1em;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #ff6b6b,#ffcc5c,#88d8b0,#6b6bff);
+    background-size: 200% 200%;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: gradientShift 5s linear infinite;
+}
+nav ul li a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+main{
+    flex: 1;
+    padding: 2em;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+button {
+    padding: 1em 2em;
+    font-size: 1em;
+    margin: 1em 0;
+    cursor: pointer;
+    font-family: '"Open Sans", sans-serif',cursive;
+    border:none;
+    border-radius: 12px;
+    background-color:linear-gradient(90deg, #ff6b6b,#ffcc5c,#88d8b0,#6b6bff);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    max-width: 100%;
+    max-height: 400px;
+    height:auto;
+    width: auto;
+    margin-top: 2em;
+    display: none;
+}
+p{
+    font-size: 2em;
+    font-weight: 400;
+    margin-top: 1em;
+    max-width: 600px;
+    font-family: 'Pacifico', cursive;
+}
+
+.animated-button {
+    background: linear-gradient(45deg, #ff6b6b, #ffcc5c, #88d8b0, #6b6bff);
+    background-size: 400% 400%;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 1em 2em;
+    font-size: 1.5em;
+    animation: gradientBG 10s ease infinite, bounce 1s infinite;
+    transition: transform 0.2s;
+  }
+  
+  .animated-button:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .dog-button{
+    width: 150px;
+    height: 150px;
+    background: url(dog.jpg) no-repeat center  center;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+    transition: transform 0.2s;
+  }
+
+  .dog-button.hover{
+    transform: scale(1.1);
+  }
+  .cat-button{
+    width: 150px;
+    height: 150px;
+    background: url(cat.jpg) no-repeat center  center;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+    transition: transform 0.2s;
+  }
+
+  .cat-button.hover{
+    transform: scale(1.1);
+  }
+  .joke-button{
+    width: 150px;
+    height: 150px;
+    background: url(girl.jpg) no-repeat right  center;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+    transition: transform 0.2s;
+  }
+
+  .joke-button.hover{
+    transform: scale(1.1);
+  }
+
+/* .dog-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+} */
+.dog-runner{
+    position: absolute;
+    /* bottom: -4.5em; */
+    width: 100px;
+    height: 200px;
+    background: url(annoying-dog-undertale.gif) no-repeat center center;
+    background-size: contain;
+}
+.cat-runner {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('Kotek.gif') no-repeat center center;
+    background-size: contain;
+  }

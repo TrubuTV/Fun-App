@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <h1>Random Joke</h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Strona Główna</a></li>
+                <li> <a href="meme.html">Random Meme</a></li>
+                <li> <a href="dog.html">Random Dog</a></li>
+                <li> <a href="cat.html">Random Cat</a></li>
+                <li> <a href="joke.html">Random Joke</a></li>
+                <!-- <li> <a href="quote.html">Quote of the Day</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <button onclick="fetchJoke()" class="animated-button">Am I joke to you?</button>
+            <p id="jokeText"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

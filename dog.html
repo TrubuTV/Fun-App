@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Random Dog</h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Strona Główna</a></li>
+                <li> <a href="meme.html">Random Meme</a></li>
+                <li> <a href="dog.html">Random Dog</a></li>
+                <li> <a href="cat.html">Random Cat</a></li>
+                <li> <a href="joke.html">Random Joke</a></li>
+                <!-- <li> <a href="quote.html">Quote of the Day</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <button onclick="fetchDog()"class="dog-button"></button>
+            <img id="dogImage"src="" alt="Dogo" style="display:none;">
+        </div>
+    </main>
+    <div class="dog-background">
+        <div class="dog-runner"></div>
+        <div class="dog-runner"></div>
+        <div class="dog-runner"></div>
+        <div class="dog-runner"></div>
+        <div class="dog-runner"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
